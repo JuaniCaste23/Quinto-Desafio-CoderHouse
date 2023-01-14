@@ -1,0 +1,11 @@
+<app-header [sidenav]="sidenav"></app-header>
+<mat-sidenav-container class="navbar"> <!--TODO!ACA ESTA EL ERROR, NO ME CIERRA ESTO, EL SIDENAV SI :v-->
+
+  <mat-sidenav #sidenav opened="false" mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="">Home</a>
+      <a mat-list-item routerLink="/anotherpage">Home 2</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+</mat-sidenav-container>
