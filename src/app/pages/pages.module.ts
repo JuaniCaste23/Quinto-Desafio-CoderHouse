@@ -5,13 +5,15 @@ import { MaterialModule } from '../modules/material-angular/material-angular.mod
 import { AppRoutingModule } from '../app-routing.module';
 import { AnotherPageComponent } from './another-page/another-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AnotherPageComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
