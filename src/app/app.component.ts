@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angula-material-sidenav';
+  title = 'angular-coderhouse-tp4';
 }

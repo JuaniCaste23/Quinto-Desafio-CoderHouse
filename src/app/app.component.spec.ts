@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angula-material-sidenav'`, () => {
+  it(`should have as title 'angular-coderhouse-tp4'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angula-material-sidenav');
+    expect(app.title).toEqual('angular-coderhouse-tp4');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angula-material-sidenav app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-coderhouse-tp4 app is running!');
   });
 });

@@ -1,0 +1,69 @@
+.toolbar {
+  display: flex;
+  background-color: var(--color-primary);
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+
+  ul {
+    display: flex;
+    padding: 20px;
+  }
+
+  ul li {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+  }
+
+  ul li:first-child {
+    color:rgb(206, 183, 183);
+    letter-spacing: 6px;
+  }
+
+  ul li:nth-child(3) {
+    color: rgb(36, 32, 32);
+    background-color:rgb(230, 65, 65);
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    border: 2px solid rgb(2, 0, 0);
+    animation: mio 1s infinite ease-in-out;
+  }
+}
+
+mat-toolbar {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  mat-icon{
+    transform: scale(1.5);
+  }
+  .hambur{
+    transition: 200ms;
+  }
+  .hambur:hover{
+    transform: rotate(90deg);
+    transition: 200ms;
+  }
+  .closed{
+    left: 70px;
+    padding: 20px;
+    background-color:rgb(110, 62, 62);
+  }
+}
+
+@keyframes mio {
+  20% {
+    background-color:rgb(230, 65, 65);
+  }
+  40% {
+    background-color:rgb(87, 59, 59);
+  }
+  70%{
+    background-color:rgb(110, 62, 62);
+  }
+  100% {
+    background-color:rgb(230, 65, 65);
+  }
+}

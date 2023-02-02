@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angula-material-sidenav": {
+    "angular-coderhouse-tp4": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,20 +13,20 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angula-material-sidenav",
+            "outputPath": "dist/angular-coderhouse-tp4",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "node_modules/primeflex/primeflex.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -66,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angula-material-sidenav:build:production"
+              "browserTarget": "angular-coderhouse-tp4:build:production"
             },
             "development": {
-              "browserTarget": "angula-material-sidenav:build:development"
+              "browserTarget": "angular-coderhouse-tp4:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angula-material-sidenav:build"
+            "browserTarget": "angular-coderhouse-tp4:build"
           }
         },
         "test": {
@@ -88,13 +84,13 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "/node_modules/primeflex/primeflex.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -104,6 +100,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "c0eec2c4-3b5c-41ea-9fed-58caf647062b"
   }
 }
